@@ -89,13 +89,13 @@ object Variance extends App{
     def flatMap[S](f:T=>CPark2[S]):CPark2[S] = ???
   }
 
-  class XPark[-T](vehicles:List[T]){
-    def park(v:T):XPark[T] = ???
-    def impound(vehicles:List[T]):XPark[T] = ???
-    def checkVehicles[B <:T](condition:String):List[B] = ???
-
-    def flatMap[R <: T, S](f:R=>XPark2[S]):XPark2[S]
-  }
+//  class XPark[-T](vehicles:List[T]){
+//    def park(v:T):XPark[T] = ???
+//    def impound(vehicles:List[T]):XPark[T] = ???
+//    def checkVehicles[B <:T](condition:String):List[B] = ???
+//
+//    def flatMap[R <: T, S](f:R=>XPark2[S]):XPark2[S]
+//  }
 
   /*
   Rule of thumb
@@ -114,11 +114,11 @@ object Variance extends App{
     def checkVehicles[B >: T](conditions:String):IList[B] = ???
   }
 
-  class XPark2[-T](vehicles:IList[T]){
-    def park(v:T):XPark[T] = ???
-    def impound[B <: T](vehicles:IList[B]):XPark[T] = ???
-    def checkVehicles[B <:T](condition:String):IList[B] = ???
-  }
+//  class XPark2[-T](vehicles:IList[T]){
+//    def park(v:T):XPark[T] = ???
+//    def impound[B <: T](vehicles:IList[B]):XPark[T] = ???
+//    def checkVehicles[B <:T](condition:String):IList[B] = ???
+//  }
 
   /**
    * 3

@@ -60,8 +60,8 @@ object SelfTypes extends App{
 
   // Cyclical dependencies
   // ERROR
-  class X extends Y
-  class Y extends X
+//  class X extends Y
+//  class Y extends X
 
   // Works!
   trait A { self:B => }

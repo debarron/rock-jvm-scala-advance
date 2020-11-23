@@ -61,11 +61,11 @@ object TypeMembers extends App{
     type A <: Number
   }
   // Throws error at compile time
-  class NumberList(hd:String, tl:NumberList) extends MList with ApplicableToNumbersOnly{
-    override type A = String
-    override def head: A = hd
-    override def tail: MList = tl
-  }
+//  class NumberList(hd:String, tl:NumberList) extends MList with ApplicableToNumbersOnly{
+//    override type A = String
+//    override def head: A = hd
+//    override def tail: MList = tl
+//  }
 
 
 }
